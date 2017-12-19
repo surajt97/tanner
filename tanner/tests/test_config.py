@@ -12,6 +12,7 @@ class TestCongif(unittest.TestCase):
                      'user_dorks': '/tmp/user_tanner/data/user_dorks.pickle'},
             'TANNER': {'host': '0.0.0.0', 'port': '9000'},
             'WEB': {'host': '0.0.0.0', 'port': '9001'},
+            'WEB': {'host': '0.0.0.0', 'port': '9002'},
             'REDIS': {'host': 'localhost', 'port': '1337', 'poolsize': '40', 'timeout': '5'},
             'EMULATORS': {'root_dir': '/opt/tanner'},
             'EMULATOR_ENABLED': {'sqli': 'True', 'rfi': 'True', 'lfi': 'True', 'xss': 'True', 'cmd_exec': 'True'},
@@ -19,7 +20,6 @@ class TestCongif(unittest.TestCase):
             'DOCKER': {'host_image': 'test_image'},
 			'LOGGER': {'log_debug': '/opt/tanner/tanner.log', 'log_err': '/opt/tanner/tanner.err'},
             'MONGO': {'enabled': 'False', 'URI': 'mongodb://localhost'},
-            'HPFEEDS': {'enabled': 'False', 'HOST': 'localhost', 'PORT': '8095', 'IDENT': '', 'SECRET': '', 'CHANNEL': 'tanner.events'},
             'LOCALLOG': {'enabled': 'False', 'PATH': '/tmp/user_tanner_report.json'},
             'CLEANLOG': {'enabled': 'False'}
             }
@@ -69,7 +69,6 @@ class TestCongif(unittest.TestCase):
             'DOCKER': {'host_image': 'busybox:latest'},
             'LOGGER': {'log_debug': '/opt/tanner/tanner.log', 'log_err': '/opt/tanner/tanner.err'},
             'MONGO': {'enabled': False, 'URI': 'mongodb://localhost'},
-            'HPFEEDS': {'enabled': False, 'HOST': 'localhost', 'PORT': 8095, 'IDENT': '', 'SECRET': '', 'CHANNEL': 'tanner.events'},
             'LOCALLOG': {'enabled': False, 'PATH': '/tmp/tanner_report.json'},
             'CLEANLOG': {'enabled': False}
             }
